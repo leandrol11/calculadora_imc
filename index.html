@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icone.png">
+    <title>Calcule seu IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1 class="titulo">Calcule seu Índice de Massa Corporal</h1>
+
+            <form class="painel">
+                <input type="text" class="nome" placeholder="Seu nome">
+                <input type="text" class="altura" placeholder="Sua altura (apenas número e ponto)">
+                <input type="text" class="peso" placeholder="Seu peso (apenas número e ponto)">
+                <button type="submit" class="btn">Calcular</button>
+            </form>
+            <p class="resultado"></p>
+            <p class="informativo">
+                A fórmula é o peso dividido pela altura ao quadrado.
+                A resposta representa o quanto a pessoa tem de massa muscular,
+                massa de gordura e massa óssea. Quando o índice de massa corporal recomendado está excedido,
+                é porque a pessoa pode estar numa situação
+                de sobrepeso com tendência à obesidade ou já ter a obesidade.
+                O contrário também é válido, e índice estiver muito
+                abaixo da normalidade, a pessoa pode estar em desnutrição,
+                com perda expressiva de massa. Portanto, dependendo do resultado,
+                é importante procurar um
+                médico para avaliar a situação.
+
+                Fonte: Ministério da Saúde
+            </p>
+            <table>
+                <thead>
+                    <td>IMC</td>
+                    <td>Classificação</td>
+                </thead>
+                <tr>
+                    <td>Menor que 16</td>
+                    <td>Magreza grave</td>
+                </tr>
+                <tr>
+                    <td>16 a menor que 17</td>
+                    <td>Magreza moderada</td>
+                </tr>
+                <tr>
+                    <td>17 a menor que 18,5</td>
+                    <td>Magreza leve</td>
+                </tr>
+                <tr>
+                    <td>18,5 a menor que 25 </td>
+                    <td>Saudável</td>
+                </tr>
+                <tr>
+                    <td>25 a menor que 30</td>
+                    <td>Sobrepeso</td>
+                </tr>
+                <tr>
+                    <td>30 a menor que 35</td>
+                    <td>Obesidade Grau I</td>
+                </tr>
+                <tr>
+                    <td>235 a menor que 40</td>
+                    <td>Obesidade Grau II (considerada severa)</td>
+                </tr>
+                <tr>
+                    <td>Maior que 40</td>
+                    <td>Obesidade Grau III (considerada mórbida)</td>
+                </tr>
+            </table>
+            <footer>
+                <a href="http://leandrol11.github.io/">By Leandro Maciel</a>
+            </footer>
+        </div>
+    </main>
+</body>
+
+</html>
